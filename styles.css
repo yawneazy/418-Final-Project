@@ -1,0 +1,22 @@
+/* Name: Alyssa Yanez Olson */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    width: 1280px;
+}
+
+form {
+    display: block;
+    width: 300px;
+}
+
+.required {
+    color: red;
+}
+
+/* 
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  } */
