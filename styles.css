@@ -1,13 +1,51 @@
 /* Name: Alyssa Yanez Olson */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--bright-logo-green: #4A5D21;
+	--muted-green: #4A5D21; /* footer green */
+	--gray-green: #616161;
+	--dark-green: #4A5D21;
+	--beige-gray: #766D65;
+	--background: #828282;
+    --beige-sand: #B7A494;
+	--white: #FFFFFF;
+	--black: #000000;
+}
+
 body {
     width: 1280px;
 }
 
+/* nav {
+ 
+} */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
 form {
     display: block;
-    width: 300px;
+    width: 700px;
+    padding: 1rem;
+    margin: 0 auto;
+    /* justify-content: flex-start; */
 }
+
+input, label, fieldset {
+    display: block;
+    padding: 10px;
+    color: var(--black);
+}
+ 
 
 .required {
     color: red;
@@ -20,3 +58,8 @@ form {
     font-weight: 100;
     font-style: normal;
   } */
+
+  footer {
+    background-color: var(--muted-green);
+    opacity: 0.5;
+  }
