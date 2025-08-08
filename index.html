@@ -6,14 +6,14 @@
         <meta name ="author" content = "Alyssa Yanez Olson">
         <title>Desert Bytes Sites</title>
         <link rel="stylesheet" href="styles.css">
-        <!-- <script src="jquery-3.7.1.min.js"></script> -->
+        <script src="jquery-3.7.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-     
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+        <script type="text/javascript" src="./slick/slick.min.js"></script>
         <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
     <!-- <script src="script.js"></script> -->
         <script src="script.js" defer></script>
@@ -36,35 +36,52 @@
         <li><a href="#websites">Websites</a></li>
         <!-- <li><a href="#about">About</a></li> -->
     </ul>
-    <!-- <h2>Request a Consultation</h2> -->
 </nav>
 <button type="submit" id="request-submit">Request a Consultation</button>    
 <main>
-    <section id="services">
-        <h2>Services</h2>
-        <h3>Basic Package - Custom Information Website</h3>
-
-        <ul>
-            <li>1 custom-coded homepage (HTML, CSS, JS)</li>
-            <li>Mobile-responsive design</li>
-            <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li>
-            <li>Light styling to match your brand aesthetic</li>
-            <li>Basic SEO Structure (meta tags, titles, alt text)</li>
-        </ul>
-        
-        <p>Homemade - no templates, tailored for you.</p>
-
-        <h3>Add-On Services</h3>
-        <ul>
-            <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
-            <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
-            <!-- <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li> -->
-            <li>Image Carousel</li>
-            <li>Social Media Links +$5 each</li>
-            <li>Website Hosting Help</li>
-            <li>Simple Shop Page (coming soon)</li>
-        </ul>
+    <section id="accordion" class="subsec" aria-labelledby="subsec-topic">
+        <h5>Services</h5>
+        <section class="no_shadow">
+            <h2>Services</h2>
+            <h3>Basic Package - Custom Information Website</h3>
+    
+            <ul>
+                <li>1 custom-coded homepage (HTML, CSS, JS)</li>
+                <li>Mobile-responsive design</li>
+                <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li>
+                <li>Light styling to match your brand aesthetic</li>
+                <li>Basic SEO Structure (meta tags, titles, alt text)</li>
+            </ul>
+            
+            <p>Homemade - no templates, tailored for you.</p>
+    
+        </section>
+        <h5>Add-On Services</h5>
+        <section class="no_shadow">
+            <ul>
+                <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
+                <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
+                <!-- <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li> -->
+                <li>Image Carousel</li>
+                <li>Social Media Links +$5 each</li>
+                <li>Website Hosting Help</li>
+                <li>Simple Shop Page (coming soon)</li>
+            </ul>
+        </section>
+        <h5>Topic 3</h5>
+        <section class="no_shadow">
+            <ul>
+                <li>Space, the final frontier.</li> 
+                <li>These are the voyages of the Starship Enterprise.</li> 
+                <li>Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</li> 
+                <li>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</li>		
+            </ul>
+        </section>
     </section>
+</section>
+    <!-- <section id="services">
+      
+    </section> -->
     <section id="websites">
         <h2>Website Examples</h2>
         <div class="fade">
