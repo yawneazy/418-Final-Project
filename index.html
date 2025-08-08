@@ -36,9 +36,9 @@
         <li><a href="#websites">Websites</a></li>
         <!-- <li><a href="#about">About</a></li> -->
     </ul>
-    <h2>Request a Consultation</h2>
+    <!-- <h2>Request a Consultation</h2> -->
 </nav>
-<button type="submit" id="submit">Request a Consultation</button>    
+<button type="submit" id="request-submit">Request a Consultation</button>    
 <main>
     <section id="services">
         <h2>Services</h2>
@@ -80,28 +80,32 @@
 <footer>
     <form id="consultation-form">
         <h2>Request a Consultation</h2>
-        <label for = "first-name">First Name<span class="required">*</span></label>
+        <div class="name-row">
+
+        <label for = "first-name">First Name <span class="required">*</span></label>
         <input id="first-name" name="first-name" type="text">
 
-        <label for = "last-name">Last Name<span class="required">*</span></label>
+        <label for = "last-name">Last Name <span class="required">*</span></label>
         <input id="last-name" name="last-name" type="text">
-
-        <label for = "user-email">Email<span class="required">*</span></label>
+        </div>
+        <label for = "user-email">Email <span class="required">*</span></label>
         <input id="user-email" name="user-email" type="text">
 
-        <label for = "phone-number">Number<span class="required">*</span></label>
+        <label for = "phone-number">Number <span class="required">*</span></label>
         <input id="phone-number" name="phone-number" type="number">
 
-        <label for = "website-url">Website URL<span class="required">*</span></label>
+        <label for = "website-url">Website URL <span class="required">*</span></label>
         <input id="website-url" name="website-url" type="text">
 
-        <label for = "user-message">Message<span class="required">*</span></label>
+        <label for = "user-message">Message <span class="required">*</span></label>
         <input id="user-message" name="user-text" type="text">
 
         <button type="submit" id="submit">Submit</button>    
     </form>
     <p id="thank-you-message"></p>
-    <p>desertbytesdesigns@gmail.com</p>
+    <div class="footer-links">
+         <p>desertbytesdesigns@gmail.com</p>
+        </div>
 </footer>
 
 <script>
