@@ -6,54 +6,114 @@
         <meta name ="author" content = "Alyssa Yanez Olson">
         <title>Desert Bytes Sites</title>
         <link rel="stylesheet" href="styles.css">
-        
-        <script src="jquery-3.7.1.min.js"></script>
+        <!-- <script src="jquery-3.7.1.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+     
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
         <script src="script.js" defer></script>
+
+
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         </head>
         <body>
 <header>
-    <h1>Desert Bytes Designs</h1>
-    <img src="./images/desert-bytes.png" alt="cactus heart logo">
+    <!-- <h1>Desert Bytes Designs</h1> -->
+    <div class="logo-container">
+        <img class="logo" src="./images/desert-bytes.png" alt="cactus heart logo">
+    </div>
     <p>Custom websites for small businesses</p>
 </header>
 <nav>
     <ul>
         <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#websites">Websites</a></li>
+        <!-- <li><a href="#about">About</a></li> -->
     </ul>
+    <h2>Request a Consultation</h2>
 </nav>
+<button type="submit" id="submit">Request a Consultation</button>    
 <main>
     <section id="services">
         <h2>Services</h2>
+        <h3>Basic Package - Custom Information Website</h3>
+
+        <ul>
+            <li>1 custom-coded homepage (HTML, CSS, JS)</li>
+            <li>Mobile-responsive design</li>
+            <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li>
+            <li>Light styling to match your brand aesthetic</li>
+            <li>Basic SEO Structure (meta tags, titles, alt text)</li>
+        </ul>
+        
+        <p>Homemade - no templates, tailored for you.</p>
+
+        <h3>Add-On Services</h3>
+        <ul>
+            <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
+            <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
+            <!-- <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li> -->
+            <li>Image Carousel</li>
+            <li>Social Media Links +$5 each</li>
+            <li>Website Hosting Help</li>
+            <li>Simple Shop Page (coming soon)</li>
+        </ul>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <section id="websites">
+        <h2>Website Examples</h2>
+        <div class="fade">
+            <div><img src="./images/desert-bytes.png" alt="slide 1"></div>
+            <div><img src="./images/desert-bytes.png" alt="slide 2"></div>
+            <div><img src="./images/desert-bytes.png" alt="cactus heart logo"></div>
+         </div> 
     </section>
-    <section id="about">
+    <!-- <section id="about">
         <h2>About</h2>
-    </section>
+    </section> -->
 </main>
-
 <footer>
-    <form>Request a Consultation
-        <label for = "Full Name">Full Name <span class="required">*</span></label>
-        <input id="full-name" name="full-name" type="text"></input>
+    <form id="consultation-form">
+        <h2>Request a Consultation</h2>
+        <label for = "first-name">First Name<span class="required">*</span></label>
+        <input id="first-name" name="first-name" type="text">
 
-        <label for = "Email">Email<span class="required">*</span></label>
-        <input id="email" name="email" type="text"></input>
+        <label for = "last-name">Last Name<span class="required">*</span></label>
+        <input id="last-name" name="last-name" type="text">
 
-        <label for = "number">Number<span class="required">*</span></label>
-        <input id="number" name="number" type="number"></input>
+        <label for = "user-email">Email<span class="required">*</span></label>
+        <input id="user-email" name="user-email" type="text">
 
-        <label for = "website">Website URL<span class="required">*</span></label>
-        <input id="website" name="website" type="text"></input>
+        <label for = "phone-number">Number<span class="required">*</span></label>
+        <input id="phone-number" name="phone-number" type="number">
 
-        <label for = "message">Message<span class="required">*</span></label>
-        <input id="text" name="text" type="text"></input>
+        <label for = "website-url">Website URL<span class="required">*</span></label>
+        <input id="website-url" name="website-url" type="text">
 
+        <label for = "user-message">Message<span class="required">*</span></label>
+        <input id="user-message" name="user-text" type="text">
+
+        <button type="submit" id="submit">Submit</button>    
     </form>
-
+    <p id="thank-you-message"></p>
+    <p>desertbytesdesigns@gmail.com</p>
 </footer>
+
+<script>
+    $(document).ready(function(){
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+});
+</script>
         </body>
         </html>

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Musician Website",
+        "description": "A site that will showcase an a musician's music, and shows.",
+        "image": "./images/memorial-site.png"
+    },
+    {
+        "title": "Memorial Website",
+        "description": "A site that will celebrate a loved one who has passed.",
+        "image": "./images/musician-site.png"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "A site that will showcase a person's accomplishments and how to reach them.",
+        "image": "./images/portfolio-site.png"
+    }
+]

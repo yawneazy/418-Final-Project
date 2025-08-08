@@ -3,7 +3,7 @@
 
 :root{
 	--bright-logo-green: #4A5D21;
-	--muted-green: #4A5D21; /* footer green */
+	--muted-green: #94a196; /* footer green */
 	--gray-green: #616161;
 	--dark-green: #4A5D21;
 	--beige-gray: #766D65;
@@ -11,6 +11,24 @@
     --beige-sand: #B7A494;
 	--white: #FFFFFF;
 	--black: #000000;
+
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
 }
 
 body {
@@ -46,6 +64,11 @@ input, label, fieldset {
     color: var(--black);
 }
  
+#submit {
+    background-color: transparent;
+    /* border: 2px black; */
+    color: var(--white);
+}
 
 .required {
     color: red;
@@ -61,5 +84,6 @@ input, label, fieldset {
 
   footer {
     background-color: var(--muted-green);
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    /* border-bottom: #000000; */
   }
