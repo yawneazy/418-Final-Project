@@ -1,9 +1,3 @@
-
-//JQuery test
-// $(document).ready(function() {
-//     $("header").css("background-color", "blue");
-// });
-
 "use strict";
 
 $("#accordion").accordion();
@@ -23,23 +17,38 @@ $(document).ready(function(){
 //     $.get('website-types.json', function(data) {
 
 //     });
+function loadSiteTypes() {
+    let siteTypesCard = document.getElementById("site-types");
+    let xhr = new XMLHttpRequest();
+    xhr.responseType = "json";
+    xhr.addEventListener("load", function() {
+        if (this.status == 200) {
+            let siteTypes = this.response;
+            let displaySites = "";
+            for (let i = 0; i < siteTypes.length; i++) {
+                let site = siteTypes[i];
+                displaySites += `<h3>${site.title}</h3>`;
+                console.log(`TITLE: ${site.title}`);
+            }
+            siteTypesCard.innerHTML = displaySites;
+        } else {
+            siteTypesCard.innerHTML = "Site Types didn't load.";
+        }
+    });
+    xhr.open("GET", "site-types.json");
+    xhr.send();
+}
 
-// //     $('.fade').slick({
-// //         dots: true,
-// //         infinite: true,
-// //         speed: 500,
-// //         fade: true,
-// //         cssEase: 'linear'
-// //     });
-// // });
-
+$(document).ready(function() {
+    loadSiteTypes();
+});
 
 
 
 function handleFormSubmit(e){
 	//prevent default form submission
 	e.preventDefault();
-    console.log("Form submitted"); 
+    console.log("Form submitted!"); 
     
 	// form inputs
 	let firstName = document.getElementById("first-name");
