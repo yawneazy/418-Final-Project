@@ -19,20 +19,23 @@
         <body>
 <header>
     <!-- <h1> Desert Bytes Designs </h1> -->
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#websites">Websites</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+        </ul>
+    </nav> 
     <div class="logo-container">
         <img class="logo" src="./images/desert-bytes.png" alt="cactus heart logo">
     </div>
-    <p>Custom websites for small businesses</p>
+    <div class="request-btn-container">
+        <button type="submit" id="request-submit">Request a Consultation</button>   
+    </div>
 </header>
-<nav>
-    <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#websites">Websites</a></li>
-        <!-- <li><a href="#about">About</a></li> -->
-    </ul>
-</nav>
-<button type="submit" id="request-submit">Request a Consultation</button>    
 <main>
+    <!-- Displays services and portfolio side by side -->
+    <div class="services-portfolio-container">
     <section id="accordion" class="accordian" aria-labelledby="subsec-topic">
         <h5>Services</h5>
         <section class="no_shadow">
@@ -72,23 +75,23 @@
             </ul>
         </section>
     </section>
-</section>
- 
+    
+    <!-- Will contain carousel fade images -->
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="fade">
-            <!-- change these to images of my portfolio thumbnails instead -->
-            <div><img src="./images/vgs-site.png" alt="slide 1 memorial website example"></div>
-            <div><img src="./images/olson-wedding-site.jpg" alt="slide 2 musician website example"></div>
-            <div><img src="./images/yawneazy-site.JPG" alt="slide 3 portfolio website example"></div>
+            <div class="carousel-img"><img src="./images/vgs-site.png" alt="slide 1 memorial website example"></div>
+            <div class="carousel-img"><img src="./images/olson-wedding-site.jpg" alt="slide 2 musician website example"></div>
+            <div class="carousel-img"><img src="./images/yawneazy-site.JPG" alt="slide 3 portfolio website example"></div>
          </div> 
-
     </section>
+    </div>
     <section>   
         <div id="site-types"></div>
     </section>
 </main>
 <footer>
+    <!-- Contact form down at the footer -->
     <form id="consultation-form">
         <h2>Request a Consultation</h2>
         <div class="name-row">
@@ -113,22 +116,11 @@
 
         <button type="submit" id="submit">Submit</button>    
     </form>
+    <!-- Thank you message after user submits form -->
     <p id="thank-you-message"></p>
     <div class="footer-links">
          <p>desertbytesdesigns@gmail.com</p>
         </div>
 </footer>
-
-<!-- <script>
-    $(document).ready(function(){
-    $('.fade').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-});
-</script> -->
         </body>
         </html>
