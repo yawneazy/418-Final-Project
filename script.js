@@ -27,8 +27,12 @@ function loadSiteTypes() {
             let displaySites = "";
             for (let i = 0; i < siteTypes.length; i++) {
                 let site = siteTypes[i];
-                displaySites += `<h3>${site.title}</h3>`;
-                console.log(`TITLE: ${site.title}`);
+                displaySites += 
+                `<div class="card">
+                <img src="${site.image}" alt="${site.title}" class="card-image">
+                <h3>${site.title}</h3>
+                <p>${site.description}</p>
+                </div>`;
             }
             siteTypesCard.innerHTML = displaySites;
         } else {
@@ -58,16 +62,16 @@ function handleFormSubmit(e){
     let websiteUrl = document.getElementById("website-url");
     let userMessage = document.getElementById("user-message");
     let thankYouMessage = document.getElementById("thank-you-message");
-    let duplicateEmailMsg = document.getElementById("duplicate-email-msg");
-    let duplicateNumberMsg = document.getElementById("duplicate-email-msg");
-    let duplicateSiteMsg = document.getElementById("duplicate-site-msg");
+    // let duplicateEmailMsg = document.getElementById("duplicate-email-msg");
+    // let duplicateNumberMsg = document.getElementById("duplicate-email-msg");
+    // let duplicateSiteMsg = document.getElementById("duplicate-site-msg");
     localStorage.setItem('firstName', firstName.value);
     localStorage.setItem('lastName', lastName.value);
     localStorage.setItem('userEmail', userEmail.value);
     localStorage.setItem('phoneNumber', phoneNumber.value);
     localStorage.setItem('websiteUrl', websiteUrl.value);
     localStorage.setItem('userMessage', userMessage.value);
-    thankYouMessage.textContent = `Thank you ${firstName.value}!`;
+    thankYouMessage.textContent = `Thank you ${firstName.value}! You will hear from me within 24 hours!`;
 
     // reset the form
     firstName.value = "";
@@ -78,9 +82,9 @@ function handleFormSubmit(e){
     userMessage.value = "";
 
     // if user email, number or website url is the same:
-    duplicateEmailMsg.textContent = `Hi again ${firstName.value}! 
-        It looks like we already have the email ${userEmail.value} on file`;
-    //
+    // duplicateEmailMsg.textContent = `Hi again ${firstName.value}! 
+    //     It looks like we already have the email ${userEmail.value} on file`;
+    // //
 }
 
 document.getElementById("consultation-form").addEventListener("submit", handleFormSubmit);

@@ -54,6 +54,21 @@ nav ul a {
     color: var(--dark-green);
 }
 
+#site-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    display: block;
+}
+
+.card-image {
+    width: 700px;
+    height: 500px;
+}
+
 #request-submit {
     background-color: transparent;
     /* border: 2px black; */
