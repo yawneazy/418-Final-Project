@@ -89,6 +89,7 @@ nav ul a {
     color: var(--dark-green);
     padding: 10px 30px;
     width: 300px;
+    font-size: 20px;
     display: block;
 }
 
@@ -131,6 +132,9 @@ nav ul a {
 
 /****************** Form styling ****************/
 
+.form-title, footer p, form label, .required {
+    color: var(--white);
+}
 form {
     display: block;
     width: 100%;
@@ -141,7 +145,7 @@ form {
 input, label, fieldset {
     display: block;
     padding: 10px;
-    color: var(--white);
+    color: var(--black);
     width: 80%;
 }
 
@@ -165,10 +169,6 @@ form input {
     margin: 10px;
 }
 
-.required {
-    color: red;
-}
-
   footer {
     background-color: var(--muted-green);
     width: 100%;
@@ -179,6 +179,10 @@ form input {
   .consultation-form {
     width: 50%;
     box-sizing: border-box;
+  }
+
+  #thank-you-message {
+    color: white;
   }
 
   .footer-links {
