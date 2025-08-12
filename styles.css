@@ -104,7 +104,7 @@ h1, h2 {
 }
 .services-portfolio-container {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     margin: 5px;
 }
 
@@ -134,16 +134,12 @@ h1, h2 {
 /* portfolio carousel styling */
 #portfolio {
     width: 50%;
-}
-
-.fade {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .carousel-img img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 /************** Site Type Card Styling ***********/
