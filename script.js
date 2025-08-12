@@ -71,7 +71,7 @@ function handleFormSubmit(e){
     localStorage.setItem('phoneNumber', phoneNumber.value);
     localStorage.setItem('websiteUrl', websiteUrl.value);
     localStorage.setItem('userMessage', userMessage.value);
-    thankYouMessage.textContent = `Thank you ${firstName.value}! You will hear from me within 24 hours!`;
+    thankYouMessage.textContent = `Thank you ${firstName.value}! You will hear from me within 24 hours!:)`;
 
     // reset the form
     firstName.value = "";

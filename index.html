@@ -18,12 +18,12 @@
         </head>
         <body>
 <header>
-    <!-- <h1> Desert Bytes Designs </h1> -->
+    <div class="header">
     <nav>
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#websites">Websites</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="#about">About</a></li>
         </ul>
     </nav> 
     <div class="logo-container">
@@ -32,13 +32,14 @@
     <div class="request-btn-container">
         <button type="submit" id="request-submit">Request a Consultation</button>   
     </div>
+    </div>
 </header>
 <main>
     <!-- Displays services and portfolio side by side -->
     <div class="services-portfolio-container">
     <section id="accordion" class="accordian" aria-labelledby="subsec-topic">
         <h5>Services</h5>
-        <section class="no_shadow">
+        <section class="services-accordion">
             <h2>Services</h2>
             <h3>Basic Package - Custom Information Website</h3>
     
@@ -52,9 +53,8 @@
             
             <p>Homemade - no templates, tailored for you.</p>
     
-        </section>
-        <h5>Add-On Services</h5>
-        <section class="add-on-services">
+            <h4>Add-On Services</h4>
+
             <ul>
                 <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
                 <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
@@ -65,14 +65,23 @@
                 <li>Simple Shop Page (coming soon)</li>
             </ul>
         </section>
-        <h5>Topic 3</h5>
-        <section class="other information">
-            <ul>
-                <li></li> 
-                <li></li> 
-                <li></li> 
-                <li></li>		
-            </ul>
+
+        <h5>Websites</h5>
+        <section class="websites-accordion">
+            <section>   
+                <div id="site-types"></div>
+            </section>
+        </section>
+        
+        <h5>About</h5>
+        <section class="about-accordion">
+            <h2>About</h2>
+            <img class="logo" src="./images/about-profile.jpg" alt="about section profile pic">
+            <p>I'm currently working as a Front End Developer in Tucson, AZ, 
+                focusing on UI/UX design, and am finishing up my MS in User Experience at ASU.</p> 
+                
+                <p>I’m passionate about the work I do and the people I collaborate with, 
+                which is why I decided to start my own business.</p>
         </section>
     </section>
     
@@ -86,9 +95,6 @@
          </div> 
     </section>
     </div>
-    <section>   
-        <div id="site-types"></div>
-    </section>
 </main>
 <footer>
     <!-- Contact form down at the footer -->
