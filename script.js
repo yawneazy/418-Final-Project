@@ -1,7 +1,9 @@
 "use strict";
 
+// For JQuery accordion widget
 $("#accordion").accordion();
 
+// For Slick carousel slides
 $(document).ready(function(){
     $('.fade').slick({
         dots: true,
@@ -12,19 +14,18 @@ $(document).ready(function(){
     });
 });
 
-
-// $(document).ready(function(){
-//     $.get('website-types.json', function(data) {
-
-//     });
+// Loads the site type data from added JSON file site-types.json
 function loadSiteTypes() {
+    // attempt to add cards 
     let siteTypesCard = document.getElementById("site-types");
     let xhr = new XMLHttpRequest();
     xhr.responseType = "json";
+    // When the request finishes loading
     xhr.addEventListener("load", function() {
         if (this.status == 200) {
             let siteTypes = this.response;
             let displaySites = "";
+            // Loops through each slide type
             for (let i = 0; i < siteTypes.length; i++) {
                 let site = siteTypes[i];
                 displaySites += 
@@ -48,11 +49,10 @@ $(document).ready(function() {
 });
 
 
-
+// Handles form submission, uses local storage
 function handleFormSubmit(e){
 	//prevent default form submission
 	e.preventDefault();
-    console.log("Form submitted!"); 
     
 	// form inputs
 	let firstName = document.getElementById("first-name");
@@ -62,15 +62,17 @@ function handleFormSubmit(e){
     let websiteUrl = document.getElementById("website-url");
     let userMessage = document.getElementById("user-message");
     let thankYouMessage = document.getElementById("thank-you-message");
-    // let duplicateEmailMsg = document.getElementById("duplicate-email-msg");
-    // let duplicateNumberMsg = document.getElementById("duplicate-email-msg");
-    // let duplicateSiteMsg = document.getElementById("duplicate-site-msg");
+
+    // Sets items for local storage
     localStorage.setItem('firstName', firstName.value);
     localStorage.setItem('lastName', lastName.value);
     localStorage.setItem('userEmail', userEmail.value);
     localStorage.setItem('phoneNumber', phoneNumber.value);
     localStorage.setItem('websiteUrl', websiteUrl.value);
     localStorage.setItem('userMessage', userMessage.value);
+
+    // For thank you message that will display users name after
+    // they fill out the form
     thankYouMessage.textContent = `Thank you ${firstName.value}! You will hear from me within 24 hours!:)`;
 
     // reset the form
@@ -80,11 +82,7 @@ function handleFormSubmit(e){
 	phoneNumber.value = "";
     websiteUrl.value = "";
     userMessage.value = "";
-
-    // if user email, number or website url is the same:
-    // duplicateEmailMsg.textContent = `Hi again ${firstName.value}! 
-    //     It looks like we already have the email ${userEmail.value} on file`;
-    // //
 }
 
+// Calls handleFormSubmit after form is submitted
 document.getElementById("consultation-form").addEventListener("submit", handleFormSubmit);

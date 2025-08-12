@@ -5,128 +5,133 @@
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <meta name ="author" content = "Alyssa Yanez Olson">
         <title> Desert Bytes Sites </title>
+        <!-- Styles -->
         <link rel="stylesheet" href="styles.css">
-        <!-- <script src="jquery-3.7.1.min.js"></script> -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+        
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
         <script type="text/javascript" src="./slick/slick.min.js"></script>
+        
         <script src="script.js" defer></script>
         </head>
         <body>
-<header>
-    <div class="header">
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#websites">Websites</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav> 
-    <div class="logo-container">
-        <img class="logo" src="./images/desert-bytes.png" alt="cactus heart logo">
-    </div>
-    <div class="request-btn-container">
-        <button type="submit" id="request-submit">Request a Consultation</button>   
-    </div>
-    </div>
-</header>
-<main>
-    <!-- Displays services and portfolio side by side -->
-    <div class="services-portfolio-container">
-    <section id="accordion" class="accordian" aria-labelledby="subsec-topic">
-        <h5>Services</h5>
-        <section class="services-accordion">
-            <h2>Services</h2>
-            <h3>Basic Package - Custom Information Website</h3>
-    
-            <ul>
-                <li>1 custom-coded homepage (HTML, CSS, JS)</li>
-                <li>Mobile-responsive design</li>
-                <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li>
-                <li>Light styling to match your brand aesthetic</li>
-                <li>Basic SEO Structure (meta tags, titles, alt text)</li>
-            </ul>
+            <header>
+                <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#websites">Websites</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav> 
+                <div class="logo-container">
+                    <img class="logo" src="./images/desert-bytes.png" alt="cactus heart logo">
+                </div>
+                <div class="request-btn-container">
+                    <button type="submit" id="request-submit">Request a Consultation</button>   
+                </div>
+                </div>
+            </header>
+            <main>
+                <h1>Custom websites for individuals and small business in Southern Arizona</h1>
+                <!-- Displays services and portfolio side by side -->
+                <div class="services-portfolio-container">
+                    <section id="accordion" class="accordian" aria-labelledby="subsec-topic">
+                        <h5 id="services-header">Services</h5>
+                        <section id="services" class="services-accordion">
+                            <h2>Services</h2>
+                            <h3>Basic Package - Custom Information Website</h3>
+                    
+                            <ul>
+                                <li>1 custom-coded homepage (HTML, CSS, JS)</li>
+                                <li>Mobile-responsive design</li>
+                                <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li>
+                                <li>Light styling to match your brand aesthetic</li>
+                                <li>Basic SEO Structure (meta tags, titles, alt text)</li>
+                            </ul>
+                            
+                            <p>Homemade - no templates, tailored for you.</p>
+                    
+                            <h4>Add-On Services</h4>
+
+                            <ul>
+                                <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
+                                <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
+                                <!-- <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li> -->
+                                <li>Image Carousel</li>
+                                <li>Social Media Links +$5 each</li>
+                                <li>Website Hosting Help</li>
+                                <li>Simple Shop Page (coming soon)</li>
+                            </ul>
+                        </section>
+
+                        <h5 id="websites-header">Websites</h5>
+                        <section id="websites" class="websites-accordion">
+                            <h2>Websites</h2>
+                            <section>   
+                                <div id="site-types"></div>
+                            </section>
+                        </section>
+                        
+                        <h5 id="about-header">About</h5>
+                        <section id="about" class="about-accordion">
+                            <h2>About</h2>
+                            <img class="logo" src="./images/about-profile.jpg" alt="about section profile pic">
+                            <p>I'm currently working as a Front End Developer in Tucson, AZ, 
+                                focusing on UI/UX design, and am finishing up my MS in User Experience at ASU.</p> 
+                                
+                                <p>I’m passionate about the work I do and the people I collaborate with, 
+                                which is why I decided to start my own business.</p>
+                        </section>
+                    </section>
             
-            <p>Homemade - no templates, tailored for you.</p>
-    
-            <h4>Add-On Services</h4>
+                    <!-- Will contain carousel fade images -->
+                    <section id="portfolio">
+                        <h2>Portfolio</h2>
+                        <div class="fade">
+                            <div class="carousel-img"><img src="./images/vgs-site.png" alt="slide 1 memorial website example"></div>
+                            <div class="carousel-img"><img src="./images/olson-wedding-site.jpg" alt="slide 2 musician website example"></div>
+                            <div class="carousel-img"><img src="./images/yawneazy-site.JPG" alt="slide 3 portfolio website example"></div>
+                        </div> 
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <!-- Contact form down at the footer -->
+                <form id="consultation-form">
+                    <h2 class="form-title">Request a Consultation</h2>
+                    <div class="name-row">
 
-            <ul>
-                <li>Additional Page (e.g. FAQ, Blog, Gallery) +$25 each</li>
-                <li>Functional Contact Form (HTML, validation, JS, storage) +$20</li>
-                <!-- <li>Up to 3 custom content section (e.g. About, Services, Contact info)</li> -->
-                <li>Image Carousel</li>
-                <li>Social Media Links +$5 each</li>
-                <li>Website Hosting Help</li>
-                <li>Simple Shop Page (coming soon)</li>
-            </ul>
-        </section>
+                    <label for = "first-name">First Name <span class="required">*</span></label>
+                    <input id="first-name" name="first-name" type="text">
 
-        <h5>Websites</h5>
-        <section class="websites-accordion">
-            <section>   
-                <div id="site-types"></div>
-            </section>
-        </section>
-        
-        <h5>About</h5>
-        <section class="about-accordion">
-            <h2>About</h2>
-            <img class="logo" src="./images/about-profile.jpg" alt="about section profile pic">
-            <p>I'm currently working as a Front End Developer in Tucson, AZ, 
-                focusing on UI/UX design, and am finishing up my MS in User Experience at ASU.</p> 
-                
-                <p>I’m passionate about the work I do and the people I collaborate with, 
-                which is why I decided to start my own business.</p>
-        </section>
-    </section>
-    
-    <!-- Will contain carousel fade images -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="fade">
-            <div class="carousel-img"><img src="./images/vgs-site.png" alt="slide 1 memorial website example"></div>
-            <div class="carousel-img"><img src="./images/olson-wedding-site.jpg" alt="slide 2 musician website example"></div>
-            <div class="carousel-img"><img src="./images/yawneazy-site.JPG" alt="slide 3 portfolio website example"></div>
-         </div> 
-    </section>
-    </div>
-</main>
-<footer>
-    <!-- Contact form down at the footer -->
-    <form id="consultation-form">
-        <h2 class="form-title">Request a Consultation</h2>
-        <div class="name-row">
+                    <label for = "last-name">Last Name <span class="required">*</span></label>
+                    <input id="last-name" name="last-name" type="text">
+                    </div>
+                    <label for = "user-email">Email <span class="required">*</span></label>
+                    <input id="user-email" name="user-email" type="text">
 
-        <label for = "first-name">First Name <span class="required">*</span></label>
-        <input id="first-name" name="first-name" type="text">
+                    <label for = "phone-number">Number <span class="required">*</span></label>
+                    <input id="phone-number" name="phone-number" type="number">
 
-        <label for = "last-name">Last Name <span class="required">*</span></label>
-        <input id="last-name" name="last-name" type="text">
-        </div>
-        <label for = "user-email">Email <span class="required">*</span></label>
-        <input id="user-email" name="user-email" type="text">
+                    <label for = "website-url">Website URL <span class="required">*</span></label>
+                    <input id="website-url" name="website-url" type="text">
 
-        <label for = "phone-number">Number <span class="required">*</span></label>
-        <input id="phone-number" name="phone-number" type="number">
+                    <label for = "user-message">Message <span class="required">*</span></label>
+                    <input id="user-message" name="user-text" type="text">
 
-        <label for = "website-url">Website URL <span class="required">*</span></label>
-        <input id="website-url" name="website-url" type="text">
-
-        <label for = "user-message">Message <span class="required">*</span></label>
-        <input id="user-message" name="user-text" type="text">
-
-        <button type="submit" id="submit">Submit</button>    
-    </form>
-    <!-- Thank you message after user submits form -->
-    <p id="thank-you-message"></p>
-    <div class="footer-links">
-         <p>desertbytesdesigns@gmail.com</p>
-        </div>
-</footer>
-        </body>
-        </html>
+                    <button type="submit" id="submit">Submit</button>    
+                </form>
+                <!-- Thank you message after user submits form -->
+                <p id="thank-you-message"></p>
+                <div class="footer-links">
+                    <p>desertbytesdesigns@gmail.com</p>
+                </div>
+            </footer>
+    </body>
+</html>
